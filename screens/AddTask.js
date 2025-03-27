@@ -23,7 +23,7 @@ import DropDownPicker from "react-native-dropdown-picker";
 import DateSelectionModal from "../components/dateSelectionModal.js";
 import AddIconItem from "../components/addIconItem.js";
 import Subtask from "../components/subtask.js";
-import SketchComponent from "../components/sketchComponent.js";
+
 import AttachmentComponent from "../components/attachmentComponent.js";
 import {
   collection,
@@ -1053,13 +1053,7 @@ const AddTask = ({ navigation }) => {
             setSubtask={setSubtask}
           />
 
-          {/* FREE HAND WRITING */}
-          <SketchComponent
-            canvasImage={canvasImage}
-            setCanvasImage={setCanvasImage}
-            canvasImageList={canvasImageList}
-            setCanvasImageList={setCanvasImageList}
-          />
+      
 
           {/* ATTACHMENTS */}
           <AttachmentComponent
@@ -1172,3 +1166,4 @@ const styles = StyleSheet.create({
     zIndex: -1,  // Sends it behind everything
   },
 });
+
